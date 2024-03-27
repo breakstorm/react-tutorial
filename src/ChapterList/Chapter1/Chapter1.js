@@ -10,6 +10,7 @@ import Example5 from "../../ExampleGroup/Example5/Example5";
 export default function Chapter1 () {
     return (
         <>
+            <h1>Chapter1</h1>
             <Example1></Example1>
             <hr/>
 
