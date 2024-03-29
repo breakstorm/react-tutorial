@@ -14,7 +14,7 @@ export default function PageList() {
                     <Link to="/Chapter2">Chapter2</Link>
                     </li>
                     <li>
-                    <Link to="/C">C</Link>
+                    <Link to="/Chapter3">Chapter3</Link>
                     </li>
                     <li>
                     <Link to="/D">D</Link>
