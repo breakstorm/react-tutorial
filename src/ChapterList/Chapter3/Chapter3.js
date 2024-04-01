@@ -8,6 +8,8 @@ import Challenge2 from "../../ChallengeGroup/Challenge2/Challenge2";
 import Example22 from "../../ExampleGroup/Example22/Example22";
 import Example23 from "../../ExampleGroup/Example23/Example23";
 import Example24 from "../../ExampleGroup/Example24/Example24";
+import Example25 from "../../ExampleGroup/Example25/Example25";
+import Example26 from "../../ExampleGroup/Example26/Example26";
 
 export default function Chapter3() {
     return (
@@ -40,6 +42,12 @@ export default function Chapter3() {
             <hr />
 
             <Example24/>
+            <hr />
+
+            <Example25/>
+            <hr />
+
+            <Example26/>
             <hr />
         </>
     );
