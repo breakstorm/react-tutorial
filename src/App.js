@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import Chapter1 from './ChapterList/Chapter1/Chapter1';
 import Chapter2 from './ChapterList/Chapter2/Chapter2';
 import Chapter3 from './ChapterList/Chapter3/Chapter3';
+import Chapter4 from './ChapterList/Chapter4/Chapter4';
 import './App.css';
 import PageList from './PageList/PageList';
 
@@ -17,7 +18,7 @@ function App() {
                         <Route index element={ <Chapter1 /> } />
                         <Route path="Chapter2" element={<Chapter2/>}/>
                         <Route path="Chapter3" element={<Chapter3/>}/>
-                        <Route path="*" element={<div>No Matach</div>}/>
+                        <Route path="Chapter4" element={<Chapter4/>}/>
                     </Route>
                 </Routes>
             </section>

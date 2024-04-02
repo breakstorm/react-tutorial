@@ -10,6 +10,10 @@ import Example23 from "../../ExampleGroup/Example23/Example23";
 import Example24 from "../../ExampleGroup/Example24/Example24";
 import Example25 from "../../ExampleGroup/Example25/Example25";
 import Example26 from "../../ExampleGroup/Example26/Example26";
+import Challenge3 from "../../ChallengeGroup/Challenge3/Challenge3";
+import Challenge4 from "../../ChallengeGroup/Challenge4/Challenge4";
+import Challenge5 from "../../ChallengeGroup/Challenge5/Challenge5";
+import Challenge6 from "../../ChallengeGroup/Challenge6/Challenge6";
 
 export default function Chapter3() {
     return (
@@ -48,6 +52,18 @@ export default function Chapter3() {
             <hr />
 
             <Example26/>
+            <hr />
+
+            <Challenge3/>
+            <hr />
+
+            <Challenge4/>
+            <hr />
+
+            <Challenge5/>
+            <hr />
+
+            <Challenge6/>
             <hr />
         </>
     );

@@ -1,7 +1,6 @@
 import {useState} from "react";
 import {useImmer} from "use-immer";
 
-let nextId = 3;
 const initialList = [
     {id: 0, title: 'Big Bellies', seen: false},
     {id: 1, title: 'Lunar Landscape', seen: false},
@@ -9,11 +8,20 @@ const initialList = [
 ];
 
 function ItemList({artworks, onToggle, onAdd}) {
+    const [input, setInput] = useState('');
+    function handleInput (e) {
+        console.log('handleInput ::: e.target.value:', e.target.value);
+        setInput(e.target.value); }
+
+
     return (
         <ul>
             <div>
-                <input type="text"/>
-                <button onClick={onAdd}>add</button>
+                <input type="text" onChange={handleInput}/>
+                <button onClick={() => {
+                    onAdd(input);
+                }}>add</button>
+                <p>{input}</p>
             </div>
 
             {artworks.map(artwork => (
@@ -56,21 +64,44 @@ export default function Example26() {
         });
     }
 
-    function handleAddMylist() {
+    function handleAddMyList(title) {
+        let newId = Number(myList.length);
+        updateMyList(draft => {
+            draft.push({
+                id: newId,
+                title: title,
+                seen: false
+            });
+        });
+    }
+
+    function handleAddYourList(title) {
+        let newId = Number(yourlist.length);
+        updateYourList(draft => {
+            draft.push({
+                id: newId,
+                title: title,
+                seen: false
+            });
+        });
+    }
+
     return (
         <>
-            <h1>Example 26</h1>
-
+            <h1>Example26</h1>
             <h2>My List</h2>
             <ItemList
                 artworks={myList}
-                onAdd={handleAddMylist}
-                onToggle={handleToggleMyList}/>
+                onToggle={handleToggleMyList}
+                onAdd={handleAddMyList}
+            />
             <h2>Your List</h2>
             <ItemList
                 artworks={yourlist}
-                onAdd={handleAddYourlist}
-                onToggle={handleToggleYourList}/>
+                onToggle={handleToggleYourList}
+                onAdd={handleAddYourList}
+            />
         </>
-    );
+    )
 }
+
