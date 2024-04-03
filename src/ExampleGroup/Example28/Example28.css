@@ -1,0 +1,13 @@
+
+.example28 section {
+    /*background-color: yellowgreen;*/
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: left;
+    margin: 4px;
+    padding: 4px;
+}
+
+.example28 heading {
+    /*background-color: aquamarine;*/
+}
